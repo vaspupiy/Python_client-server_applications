@@ -13,9 +13,9 @@ import os
 """
 
 
-def write_order_to_json(data_folder_path, file_name, encoding='utf-8', **kwargs):
+def write_order_to_json(data_folder_path: str, file_name: str, encoding='utf-8', **kwargs):
     path = os.path.join(data_folder_path, f'{file_name}.json')
-    with open(path, 'r', encoding=encoding) as file:
+    with open(path, encoding=encoding) as file:
         dict_data = json.load(file)
     with open(path, 'w', encoding=encoding) as file:
         dict_data['orders'].append(kwargs)

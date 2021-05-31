@@ -24,25 +24,42 @@ main_data — и поместить в него названия столбцо�
 """
 
 
-def test_csv_file(_file_path, _encoding):
-    with open(_file_path, 'r', encoding=_encoding) as file:
+def encoding_detector(file: str) -> str:
+    from chardet.universaldetector import UniversalDetector
+    detector = UniversalDetector()
+    with open(file, 'rb') as f_b:
+        for line in f_b:
+            detector.feed(line)
+            if detector.done:
+                break
+        detector.close()
+    return detector.result['encoding']
+
+
+def test_csv_file(_file_path: str, _encoding: str):
+    with open(_file_path, encoding=_encoding) as file:
         print(file.read())
 
 
-def read_file(path_file, enc):
-    with open(path_file, 'r', encoding=enc) as file:
-        for line in file.readlines():
-            yield line.strip()
+def read_file(path_file: str, _encoding: str) -> str:
+    try:
+        with open(path_file, encoding=_encoding) as file:
+            for line in file.readlines():
+                yield line.strip()
+    except UnicodeDecodeError:
+        with open(path_file, encoding=encoding_detector(path_file)) as file:
+            for line in file.readlines():
+                yield line.strip()
 
 
-def gen_data_files(data_path, _path, _encode):
-    for file in _path:
+def gen_data_files(data_path: str, _name_files: list, _encoding: str) -> str:
+    for file in _name_files:
         path = os.path.join(data_path, file)
-        data_file = read_file(path, _encode)
+        data_file = read_file(path, _encoding)
         yield data_file
 
 
-def create_main_data(data_path, _name_files, encode) -> list:
+def create_main_data(data_path: str, _name_files: list, encode: str) -> list:
     lists_data = {  # По условию задания создаем 4-е списка, не куда не выводим и ни где не используем
         'os_prod_list': [],
         'os_name_list': [],
@@ -56,32 +73,18 @@ def create_main_data(data_path, _name_files, encode) -> list:
     for item in items_data:
         append_list = [None, None, None, None]
         for line in item:
-            if main_data[0][0] in line:
-                # tmp = line.split(':')[1]
-                tmp = re.sub(r'.*:\s+', '', line)  # по условию извлекаем с помощью регулярных выражений
-                lists_data['os_prod_list'].append(tmp)
-                append_list[0] = tmp
-            elif main_data[0][1] in line:
-                # tmp = line.split(':')[1]
-                tmp = re.sub(r'.*:\s+', '', line)
-                lists_data['os_name_list'].append(tmp)
-                append_list[1] = tmp
-            elif main_data[0][2] in line:
-                # tmp = line.split(':')[1]
-                tmp = re.sub(r'.*:\s+', '', line)
-                lists_data['os_code_list'].append(tmp)
-                append_list[2] = tmp
-            elif main_data[0][3] in line:
-                # tmp = line.split(':')[1]
-                tmp = re.sub(r'.*:\s+', '', line)
-                lists_data['os_type_list'].append(tmp)
-                append_list[3] = tmp
+            for i, k in enumerate(lists_data):
+                if main_data[0][i] in line:
+                    tmp = re.sub(r'.*:\s+', '', line)
+                    lists_data[k].append(tmp)
+                    append_list[i] = tmp
+                    break
         main_data.append(append_list)
     # print(lists_data)  # по условию выводить не просили
     return main_data
 
 
-def get_data(data_path, encode):
+def get_data(data_path: str, encode: str) -> list:
     name_files = os.listdir(data_path)
     main_data = create_main_data(data_path, name_files, encode)
     return main_data
@@ -98,6 +101,7 @@ def write_to_csv(_data, _folder_path, _encoding):
 
 if __name__ == '__main__':
     ENCODING = 'cp1251'
+    # ENCODING = 'utf-8'
     DATA_PATH_RECEIVE = 'task_1_data_receive'
     DATA_PATH_SEND = 'task_1_data_send'
 

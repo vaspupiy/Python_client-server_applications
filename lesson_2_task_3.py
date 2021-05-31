@@ -1,5 +1,4 @@
 import os
-
 import yaml
 
 """
@@ -16,14 +15,14 @@ import yaml
 """
 
 
-def save_yaml_data(_data: dict, _path: str, _encoding, _file_name='data'):
+def save_yaml_data(_data: dict, _path: str, _encoding: str, _file_name='data'):
     os.makedirs(_path, exist_ok=True)
     path = os.path.join(_path, f'{_file_name}.yaml')
     with open(path, 'w', encoding=_encoding) as file:
         yaml.dump(_data, file, default_flow_style=False)
 
 
-def see_yaml_file(_path, _encoding, _file_name='data'):
+def see_yaml_file(_path: str, _encoding: str, _file_name='data'):
     path = os.path.join(_path, f'{_file_name}.yaml')
     with open(path, encoding=_encoding) as file:
         content = yaml.load(file, Loader=yaml.FullLoader)
