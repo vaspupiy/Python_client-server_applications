@@ -34,8 +34,8 @@ def receive_message_from_client(_client, data_volume) -> bytes:
 
 def get_args(_host: str, _port: int):
     parser = ArgumentParser()
-    parser.add_argument("--addr", "-a", help="IP-адрес для прослушивания", type=str, default=HOST)
-    parser.add_argument("--port", "-p", help="TCP-порт для работы", type=int, default=PORT)
+    parser.add_argument("--addr", "-a", help="IP-адрес для прослушивания", type=str, default=_host)
+    parser.add_argument("--port", "-p", help="TCP-порт для работы", type=int, default=_port)
     _args = parser.parse_args()
 
     if 1023 > _args.port or _args.port > 65535:
