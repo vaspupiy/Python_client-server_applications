@@ -4,7 +4,8 @@ from socket import socket, AF_INET, SOCK_STREAM
 
 import pytest
 
-from tcp_server import accepts_response, parse_message, send_response_client, receive_message_from_client
+from tcp_server import accepts_response, parse_message, send_response_client, receive_message_from_client, \
+    set_socket_connection_serv
 
 TIME = datetime.now()
 
@@ -101,3 +102,7 @@ def test_receive_message_from_client():
     client.close()
     s_cl.close()
     s_serv.close()
+
+
+def test_set_socket_connection_serv():
+    assert set_socket_connection_serv('0.0.0.0', 7777).getsockname() == ('0.0.0.0', 7777)
