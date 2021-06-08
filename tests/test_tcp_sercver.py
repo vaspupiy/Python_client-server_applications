@@ -5,7 +5,7 @@ from socket import socket, AF_INET, SOCK_STREAM
 import pytest
 
 from tcp_server import accepts_response, parse_message, send_response_client, receive_message_from_client, \
-    set_socket_connection_serv
+    set_socket_connection_serv, get_args, main
 
 TIME = datetime.now()
 
@@ -84,6 +84,11 @@ def test_send_response_client():
     s_serv.close()
 
 
+def test_get_args_good(crutch_for_terminal_input_function):
+    assert get_args('localhost', 7777, ).addr == 'localhost'
+    assert get_args('localhost', 7777, ).port == 7777
+
+
 def test_receive_message_from_client():
     s_serv = socket(AF_INET, SOCK_STREAM)
     s_serv.bind(('0.0.0.0', 7777))
@@ -106,3 +111,10 @@ def test_receive_message_from_client():
 
 def test_set_socket_connection_serv():
     assert set_socket_connection_serv('0.0.0.0', 7777).getsockname() == ('0.0.0.0', 7777)
+
+
+def test_main():
+    assert main('0.0.0.0', 7777, 1024, testing=True) is None
+
+
+

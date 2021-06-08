@@ -55,12 +55,14 @@ def set_socket_connection(_host: str, _port: int):
     return s
 
 
-def main(_host, _port, _time, _len_message=4096):
+def main(_host, _port, _time, _len_message=4096, testing=False):
     args = get_args(_host, _port)
     socket_connection = set_socket_connection(args.addr, args.port)
     msg = create_presence(_time)
     msg_byte = dumps_message(msg)
     send_message(socket_connection, msg_byte)
+    if testing:
+        return
     data_bytes = receive_message(socket_connection, _len_message)
     message_from_server = parse_message(data_bytes)
     print('Сообщения от сервера ', message_from_server, type(message_from_server), ', длинной', len(data_bytes), 'байт')

@@ -5,7 +5,7 @@ from datetime import datetime
 import pytest
 
 from tcp_client import create_presence, dumps_message, get_args, set_socket_connection, send_message, receive_message, \
-    parse_message
+    parse_message, main
 
 from socket import socket, AF_INET, SOCK_STREAM
 
@@ -204,8 +204,9 @@ def test_pars_message(resp_message):
 
 
 # не знаю как тестировать, всегда падает с ошибкой SystemExit!!!
-# def test_get_args_good():
-#     assert get_args('localhost', 7777)
+def test_get_args_good(crutch_for_terminal_input_function):
+    assert get_args('localhost', 7777, ).addr == 'localhost'
+    assert get_args('localhost', 7777, ).port == 7777
 
 
 def test_set_socket_connection():
@@ -216,3 +217,11 @@ def test_set_socket_connection():
     client, addr = s.accept()
     client.close()
     s.close()
+
+
+# По итогам ...
+def test_main():
+    s_serv = socket(AF_INET, SOCK_STREAM)
+    s_serv.bind(('0.0.0.0', 7777))
+    s_serv.listen(1)
+    assert main('localhost', 7777, datetime.now(), 1024, True) is None

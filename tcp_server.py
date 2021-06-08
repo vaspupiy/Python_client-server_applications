@@ -51,10 +51,13 @@ def set_socket_connection_serv(_host: str, _port: int):
     return s
 
 
-def main(_host, _port, _len_message=4096):
+def main(_host, _port, _len_message=4096, testing=False):
     args = get_args(_host, _port)
     socket_connection = set_socket_connection_serv(args.addr, args.port)
     while True:
+        if testing:
+            return
+
         client, addr = socket_connection.accept()
         data_bytes = receive_message_from_client(client, _len_message)
         data = parse_message(data_bytes)
@@ -76,4 +79,3 @@ if __name__ == '__main__':
         print(error)
         with open('err_serv.txt', 'a+') as err_file:
             err_file.write(f'{TIME}; {error}, тип ошибки {type(error)} \n')
-
