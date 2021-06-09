@@ -1,0 +1,86 @@
+2021-06-08 23:50:20,353 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-08 23:50:20,353 :: DEBUG :: tcp_client :: поехали
+2021-06-08 23:50:20,353 :: DEBUG :: tcp_client :: параметры ф-ии main: "localhost"::"7777"::"2021-06-08 23:50:20.353820"::"1024"::"False"
+2021-06-08 23:50:20,353 :: DEBUG :: tcp_client :: получены значения хоста: localhost и порта: 7777
+2021-06-08 23:50:20,353 :: DEBUG :: tcp_client ::  установленно соединение: <socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57832), raddr=('127.0.0.1', 7777)>
+2021-06-08 23:50:20,353 :: DEBUG :: tcp_client :: создано сообщение: {'action': 'presence', 'time': '2021-06-08 23:50:20.353820', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_client :: сообщение закодировано для отправки: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-08 23:50:20.353820\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.'
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_client :: сообщение отпралено
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_client :: получено сообщение от сервера: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_client :: сообщение декодировано: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-08 23:50:20,454 :: INFO :: tcp_client :: Сообщения от сервера: "серверу пофиг!"
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_client :: соединение закрыто
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_client :: приехали
+2021-06-08 23:51:55,273 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_client :: поехали
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_client :: параметры ф-ии main: "localhost"::"7777"::"2021-06-08 23:51:55.273659"::"1024"::"False"
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_client :: получены значения хоста: localhost и порта: 7777
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_client ::  установленно соединение: <socket.socket fd=456, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 53020), raddr=('127.0.0.1', 7777)>
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_client :: создано сообщение: {'action': 'presence', 'time': '2021-06-08 23:51:55.273659', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_client :: сообщение закодировано для отправки: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-08 23:51:55.273659\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.'
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_client :: сообщение отпралено
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_client :: получено сообщение от сервера: b''
+2021-06-08 23:51:55,273 :: ERROR :: tcp_client :: Ran out of input
+Traceback (most recent call last):
+  File "tcp_client.py", line 96, in <module>
+    main(HOST, PORT, TIME, LEN_RECEIVE_MASSAGE)
+  File "tcp_client.py", line 77, in main
+    message_from_server = parse_message(data_bytes)
+  File "tcp_client.py", line 40, in parse_message
+    pars_data = pickle.loads(_data)
+EOFError: Ran out of input
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_client :: приехали
+2021-06-09 15:04:32,656 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:06:20,606 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:07:43,436 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:09:18,110 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:11:57,495 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:17:42,705 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:18:13,690 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:18:13,691 :: DEBUG :: tcp_client :: параметры ф-ии main: "localhost"::"7777"::"2021-06-09 15:18:13.691230"::"1024"::"True"
+2021-06-09 15:18:13,691 :: DEBUG :: tcp_client :: получены значения хоста: localhost и порта: 7777
+2021-06-09 15:18:13,692 :: DEBUG :: tcp_client ::  установленно соединение: <socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 61898), raddr=('127.0.0.1', 7777)>
+2021-06-09 15:18:13,692 :: DEBUG :: tcp_client :: создано сообщение: {'action': 'presence', 'time': '2021-06-09 15:18:13.691230', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-09 15:18:13,692 :: DEBUG :: tcp_client :: сообщение закодировано для отправки: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-09 15:18:13.691230\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.'
+2021-06-09 15:18:13,692 :: DEBUG :: tcp_client :: сообщение отпралено
+2021-06-09 15:23:45,117 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:23:45,118 :: DEBUG :: tcp_client :: параметры ф-ии main: "localhost"::"7777"::"2021-06-09 15:23:45.118276"::"1024"::"True"
+2021-06-09 15:23:45,118 :: DEBUG :: tcp_client :: получены значения хоста: localhost и порта: 7777
+2021-06-09 15:23:45,119 :: DEBUG :: tcp_client ::  установленно соединение: <socket.socket fd=832, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 63168), raddr=('127.0.0.1', 7777)>
+2021-06-09 15:23:45,119 :: DEBUG :: tcp_client :: создано сообщение: {'action': 'presence', 'time': '2021-06-09 15:23:45.118276', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-09 15:23:45,119 :: DEBUG :: tcp_client :: сообщение закодировано для отправки: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-09 15:23:45.118276\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.'
+2021-06-09 15:23:45,119 :: DEBUG :: tcp_client :: сообщение отпралено
+2021-06-09 15:25:56,311 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:25:56,312 :: DEBUG :: tcp_client :: параметры ф-ии main: "localhost"::"7777"::"2021-06-09 15:25:56.312442"::"1024"::"True"
+2021-06-09 15:25:56,312 :: DEBUG :: tcp_client :: получены значения хоста: localhost и порта: 7777
+2021-06-09 15:25:56,313 :: DEBUG :: tcp_client ::  установленно соединение: <socket.socket fd=768, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59577), raddr=('127.0.0.1', 7777)>
+2021-06-09 15:25:56,313 :: DEBUG :: tcp_client :: создано сообщение: {'action': 'presence', 'time': '2021-06-09 15:25:56.312442', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-09 15:25:56,318 :: DEBUG :: tcp_client :: сообщение закодировано для отправки: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-09 15:25:56.312442\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.'
+2021-06-09 15:25:56,318 :: DEBUG :: tcp_client :: сообщение отпралено
+2021-06-09 15:27:37,796 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:27:37,797 :: DEBUG :: tcp_client :: параметры ф-ии main: "localhost"::"7777"::"2021-06-09 15:27:37.797370"::"1024"::"True"
+2021-06-09 15:27:37,797 :: DEBUG :: tcp_client :: получены значения хоста: localhost и порта: 7777
+2021-06-09 15:27:37,798 :: DEBUG :: tcp_client ::  установленно соединение: <socket.socket fd=728, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57416), raddr=('127.0.0.1', 7777)>
+2021-06-09 15:27:37,798 :: DEBUG :: tcp_client :: создано сообщение: {'action': 'presence', 'time': '2021-06-09 15:27:37.797370', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-09 15:27:37,798 :: DEBUG :: tcp_client :: сообщение закодировано для отправки: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-09 15:27:37.797370\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.'
+2021-06-09 15:27:37,798 :: DEBUG :: tcp_client :: сообщение отпралено
+2021-06-09 15:28:32,691 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:28:32,692 :: DEBUG :: tcp_client :: параметры ф-ии main: "localhost"::"7777"::"2021-06-09 15:28:32.692793"::"1024"::"True"
+2021-06-09 15:28:32,692 :: DEBUG :: tcp_client :: получены значения хоста: localhost и порта: 7777
+2021-06-09 15:28:32,693 :: DEBUG :: tcp_client ::  установленно соединение: <socket.socket fd=692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 64305), raddr=('127.0.0.1', 7777)>
+2021-06-09 15:28:32,693 :: DEBUG :: tcp_client :: создано сообщение: {'action': 'presence', 'time': '2021-06-09 15:28:32.692793', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-09 15:28:32,693 :: DEBUG :: tcp_client :: сообщение закодировано для отправки: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-09 15:28:32.692793\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.'
+2021-06-09 15:28:32,693 :: DEBUG :: tcp_client :: сообщение отпралено
+2021-06-09 15:31:32,336 :: DEBUG :: client_log_config :: Логгер создан
+2021-06-09 15:31:32,336 :: DEBUG :: tcp_client :: поехали
+2021-06-09 15:31:32,336 :: DEBUG :: tcp_client :: параметры ф-ии main: "localhost"::"7777"::"2021-06-09 15:31:32.335144"::"1024"::"False"
+2021-06-09 15:31:32,336 :: DEBUG :: tcp_client :: получены значения хоста: localhost и порта: 7777
+2021-06-09 15:31:32,341 :: DEBUG :: tcp_client ::  установленно соединение: <socket.socket fd=492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 56205), raddr=('127.0.0.1', 7777)>
+2021-06-09 15:31:32,341 :: DEBUG :: tcp_client :: создано сообщение: {'action': 'presence', 'time': '2021-06-09 15:31:32.335144', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_client :: сообщение закодировано для отправки: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-09 15:31:32.335144\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.'
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_client :: сообщение отпралено
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_client :: получено сообщение от сервера: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_client :: сообщение декодировано: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-09 15:31:32,342 :: INFO :: tcp_client :: Сообщения от сервера: "серверу пофиг!"
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_client :: соединение закрыто
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_client :: приехали

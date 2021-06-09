@@ -1,0 +1,103 @@
+2021-06-08 23:50:03,594 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-08 23:50:03,594 :: DEBUG :: tcp_server :: поехали
+2021-06-08 23:50:03,594 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-08 23:50:03,594 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-08 23:50:03,594 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=372, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-08 23:50:03,594 :: DEBUG :: tcp_server :: жду клиента
+2021-06-08 23:50:20,353 :: DEBUG :: tcp_server :: установлленно соединение с клиентом: <socket.socket fd=324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57832)>, адресс: ('127.0.0.1', 57832)
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_server :: получено сообщение: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-08 23:50:20.353820\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.': от клиента: <socket.socket fd=324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57832)>, длинной: ('127.0.0.1', 57832) байт
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_server :: сообщение декодировано: {'action': 'presence', 'time': '2021-06-08 23:50:20.353820', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-08 23:50:20,454 :: INFO :: tcp_server :: Сообщение: {'action': 'presence', 'time': '2021-06-08 23:50:20.353820', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, было отправлено клиентом: ('127.0.0.1', 57832)
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-08 23:50:20,454 :: INFO :: tcp_server :: создано ответное сообщение: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-08 23:50:20,454 :: INFO :: tcp_server :: ответное сообщение: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.' отправлено <socket.socket fd=324, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57832)>
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_server :: закрыто соединение с клиентом: <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>, адресс: ('127.0.0.1', 57832)
+2021-06-08 23:50:20,454 :: DEBUG :: tcp_server :: жду клиента
+2021-06-08 23:51:44,154 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-08 23:51:44,154 :: DEBUG :: tcp_server :: поехали
+2021-06-08 23:51:44,154 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-08 23:51:44,155 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-08 23:51:44,155 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=408, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-08 23:51:44,155 :: DEBUG :: tcp_server :: жду клиента
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_server :: установлленно соединение с клиентом: <socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53020)>, адресс: ('127.0.0.1', 53020)
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_server :: получено сообщение: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-08 23:51:55.273659\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.': от клиента: <socket.socket fd=376, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 53020)>, длинной: ('127.0.0.1', 53020) байт
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_server :: сообщение декодировано: {'action': 'presence', 'time': '2021-06-08 23:51:55.273659', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-08 23:51:55,273 :: INFO :: tcp_server :: Сообщение: {'action': 'presence', 'time': '2021-06-08 23:51:55.273659', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, было отправлено клиентом: ('127.0.0.1', 53020)
+2021-06-08 23:51:55,273 :: ERROR :: tcp_server :: name 'ллхщтт' is not defined
+Traceback (most recent call last):
+  File "D:/A_Geekbrains/Python_client-server_applications/home_work/tcp_server.py", line 93, in <module>
+    main(HOST, PORT, LEN_RECEIVE_MASSAGE)
+  File "D:/A_Geekbrains/Python_client-server_applications/home_work/tcp_server.py", line 74, in main
+    msg = accepts_response(data)
+  File "D:/A_Geekbrains/Python_client-server_applications/home_work/tcp_server.py", line 11, in accepts_response
+    ллхщтт
+NameError: name 'ллхщтт' is not defined
+2021-06-08 23:51:55,273 :: DEBUG :: tcp_server :: приехали :)
+2021-06-09 15:03:34,801 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:23:45,209 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:23:45,229 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:23:45,229 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:25:56,322 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:25:56,399 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:25:56,399 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:25:56,409 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:25:56,409 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:25:56,409 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:25:56,425 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:25:56,425 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:25:56,425 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:25:56,425 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:27:37,805 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:27:37,883 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:27:37,883 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:27:37,891 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:27:37,891 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:27:37,891 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:27:37,909 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:27:37,909 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:27:37,909 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:27:37,909 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,701 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,701 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-09 15:28:32,703 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,703 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,703 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-09 15:28:32,703 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-09 15:28:32,705 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,705 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,705 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,718 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,718 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,718 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,718 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-09 15:28:32,719 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=384, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-09 15:28:32,720 :: DEBUG :: tcp_server :: жду клиента
+2021-06-09 15:28:32,720 :: DEBUG :: tcp_server :: жду клиента
+2021-06-09 15:28:32,720 :: DEBUG :: tcp_server :: жду клиента
+2021-06-09 15:28:32,720 :: DEBUG :: tcp_server :: жду клиента
+2021-06-09 15:31:03,282 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-09 15:31:03,282 :: DEBUG :: tcp_server :: поехали
+2021-06-09 15:31:03,282 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-09 15:31:03,283 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-09 15:31:03,284 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-09 15:31:03,284 :: DEBUG :: tcp_server :: жду клиента
+2021-06-09 15:31:32,341 :: DEBUG :: tcp_server :: установлленно соединение с клиентом: <socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56205)>, адресс: ('127.0.0.1', 56205)
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_server :: получено сообщение: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-09 15:31:32.335144\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.': от клиента: <socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56205)>, длинной: ('127.0.0.1', 56205) байт
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_server :: сообщение декодировано: {'action': 'presence', 'time': '2021-06-09 15:31:32.335144', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-09 15:31:32,342 :: INFO :: tcp_server :: Сообщение: {'action': 'presence', 'time': '2021-06-09 15:31:32.335144', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, было отправлено клиентом: ('127.0.0.1', 56205)
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-09 15:31:32,342 :: INFO :: tcp_server :: создано ответное сообщение: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-09 15:31:32,342 :: INFO :: tcp_server :: ответное сообщение: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.' отправлено <socket.socket fd=428, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 56205)>
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_server :: закрыто соединение с клиентом: <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>, адресс: ('127.0.0.1', 56205)
+2021-06-09 15:31:32,342 :: DEBUG :: tcp_server :: жду клиента
