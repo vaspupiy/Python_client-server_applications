@@ -1,0 +1,951 @@
+2021-06-15 15:05:13,399 :: DEBUG :: tcp_server :: установлленно соединение с клиентом: <socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57690)>, адресс: ('127.0.0.1', 57690)
+2021-06-15 15:05:13,399 :: DEBUG :: tcp_server :: получено сообщение: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-15 15:05:13.392479\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.': от клиента: <socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57690)>, длинной: ('127.0.0.1', 57690) байт
+2021-06-15 15:05:13,399 :: DEBUG :: tcp_server :: сообщение декодировано: {'action': 'presence', 'time': '2021-06-15 15:05:13.392479', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:05:13,400 :: INFO :: tcp_server :: Сообщение: {'action': 'presence', 'time': '2021-06-15 15:05:13.392479', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, было отправлено клиентом: ('127.0.0.1', 57690)
+2021-06-15 15:05:13,400 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:05:13,400 :: INFO :: tcp_server :: создано ответное сообщение: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:05:13,400 :: INFO :: tcp_server :: ответное сообщение: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.' отправлено <socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 57690)>
+2021-06-15 15:05:13,400 :: DEBUG :: tcp_server :: закрыто соединение с клиентом: <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>, адресс: ('127.0.0.1', 57690)
+2021-06-15 15:05:13,401 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:23:44,158 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:23:44,158 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:23:44,160 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:23:44,160 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:23:44,161 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:23:44,161 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:23:44,163 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:23:44,163 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:23:44,163 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:23:44,172 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:23:44,172 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:23:44,172 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:23:44,172 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:23:44,173 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:23:44,173 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:23:44,173 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:23:44,173 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=352, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=352, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=352, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=352, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:23:44,174 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:27:49,202 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:27:49,202 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:27:49,202 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:27:49,202 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:27:49,203 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:27:49,203 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:27:49,203 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:27:49,203 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:27:49,204 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:27:49,204 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:27:49,204 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:27:55,656 :: DEBUG :: tcp_server :: установлленно соединение с клиентом: <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60204)>, адресс: ('127.0.0.1', 60204)
+2021-06-15 15:27:55,657 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60204)>, 1024):: именованные аргументы: {}
+2021-06-15 15:27:55,657 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-15 15:27:55.650691\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.'
+2021-06-15 15:27:55,657 :: DEBUG :: tcp_server :: получено сообщение: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-15 15:27:55.650691\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.': от клиента: <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60204)>, длинной: ('127.0.0.1', 60204) байт
+2021-06-15 15:27:55,657 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-15 15:27:55.650691\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:27:55,657 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'presence', 'time': '2021-06-15 15:27:55.650691', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:27:55,657 :: DEBUG :: tcp_server :: сообщение декодировано: {'action': 'presence', 'time': '2021-06-15 15:27:55.650691', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:27:55,657 :: INFO :: tcp_server :: Сообщение: {'action': 'presence', 'time': '2021-06-15 15:27:55.650691', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, было отправлено клиентом: ('127.0.0.1', 60204)
+2021-06-15 15:27:55,657 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:27:55.650691', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:27:55,657 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:27:55,657 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:27:55,657 :: INFO :: tcp_server :: создано ответное сообщение: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:27:55,658 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60204)>, b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'):: именованные аргументы: {}
+2021-06-15 15:27:55,658 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:27:55,658 :: INFO :: tcp_server :: ответное сообщение: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.' отправлено <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 60204)>
+2021-06-15 15:27:55,658 :: DEBUG :: tcp_server :: закрыто соединение с клиентом: <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>, адресс: ('127.0.0.1', 60204)
+2021-06-15 15:27:55,658 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:29:25,766 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:29:25,767 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:29:25.702443', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:29:25,767 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:29:25,767 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:29:25,768 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:29:25,768 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:29:25,769 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:29:25.702443', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:29:25,769 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:29:25.702443', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:29:25,769 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:29:25,769 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:29:25,769 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:29:25,769 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:29:25,772 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:29:25,772 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:29:25,772 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:29:25,773 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:29:25,773 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:29:25,773 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:29:25,773 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:29:25,773 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:29:25,773 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:29:25,776 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=816, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54513)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:29:25,776 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=816, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54513)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:29:25,776 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=816, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54513)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:29:25,776 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:29:25,776 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:29:25,776 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:29:25,778 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,778 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,778 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,779 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:29:25,779 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:29:25,779 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:29:25,779 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,779 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,779 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,779 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:29:25,779 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:29:25,779 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:29:25,782 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=816, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54514)>, 1024):: именованные аргументы: {}
+2021-06-15 15:29:25,782 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=816, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54514)>, 1024):: именованные аргументы: {}
+2021-06-15 15:29:25,782 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=816, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54514)>, 1024):: именованные аргументы: {}
+2021-06-15 15:29:25,782 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:29:25,782 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:29:25,782 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:29:25,784 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,784 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,784 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,784 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,784 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,784 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=808, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,786 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:29:25,786 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:29:25,786 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:29:25,786 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,787 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,788 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:29:25,789 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:31:18,720 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:31:18,721 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:31:18.654116', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:31:18,721 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:31:18,721 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:31:18,723 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:31:18,723 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:31:18,723 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:31:18.654116', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:31:18,723 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:31:18.654116', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:31:18,724 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:31:18,724 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:31:18,724 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:31:18,724 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:31:18,726 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:31:18,726 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:31:18,726 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:31:18,726 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:31:18,726 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:31:18,726 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:31:18,727 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:31:18,727 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:31:18,727 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:31:18,729 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54522)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:31:18,729 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54522)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:31:18,729 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54522)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:31:18,729 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:31:18,729 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:31:18,729 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:31:18,731 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,731 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,731 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,731 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:31:18,731 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:31:18,731 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:31:18,731 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,731 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,731 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,732 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:31:18,732 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:31:18,732 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:31:18,734 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=792, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54523)>, 1024):: именованные аргументы: {}
+2021-06-15 15:31:18,734 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=792, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54523)>, 1024):: именованные аргументы: {}
+2021-06-15 15:31:18,734 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=792, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54523)>, 1024):: именованные аргументы: {}
+2021-06-15 15:31:18,734 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:31:18,734 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:31:18,734 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:31:18,736 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,736 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,736 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,736 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=784, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,736 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=784, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,736 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=784, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,738 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:31:18,738 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:31:18,738 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:31:18,738 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,739 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,752 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:31:18,752 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:31:18,752 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:31:18,752 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,753 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=776, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:31:18,754 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:31:18,754 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:31:18,754 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:31:18,754 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:31:18,754 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:31:18,754 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:31:18,754 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:31:18,754 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:35:07,419 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:07,419 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:35:07.360892', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:35:07,419 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:35:07,419 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:35:07,421 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:07,421 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:07,422 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:35:07.360892', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:35:07,422 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:35:07.360892', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:35:07,422 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:35:07,422 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:35:07,422 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:35:07,422 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:35:07,424 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:07,424 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:07,424 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:07,424 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:35:07,424 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:35:07,424 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:35:07,425 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:35:07,425 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:35:07,425 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:35:07,427 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54530)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:35:07,427 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54530)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:35:07,427 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54530)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:35:07,427 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:35:07,427 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:35:07,427 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:35:07,429 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,429 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,429 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,430 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:35:07,430 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:35:07,430 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:35:07,430 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,430 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,430 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,430 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:35:07,430 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:35:07,430 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:35:07,433 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54531)>, 1024):: именованные аргументы: {}
+2021-06-15 15:35:07,433 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54531)>, 1024):: именованные аргументы: {}
+2021-06-15 15:35:07,433 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 54531)>, 1024):: именованные аргументы: {}
+2021-06-15 15:35:07,433 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:35:07,433 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:35:07,433 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:35:07,435 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,435 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,435 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,436 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=748, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,436 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=748, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,436 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=748, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,437 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:07,437 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:07,437 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:07,437 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,438 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,439 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=760, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:35:07,440 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:35:42,906 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:35:42,906 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:35:42,906 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:35:42,906 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:35:42,906 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:42,907 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:35:42,907 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:35:42,907 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:35:42,907 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:42,908 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:35:42,908 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:38:39,506 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:38:39,507 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:38:39,507 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:38:39,507 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:38:39,507 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:38:39,507 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:38:39,507 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:38:39,507 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:38:39,508 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:38:39,508 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=452, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:38:39,508 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:39:20,862 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:39:20,862 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:39:20,862 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:39:20,862 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:39:20,862 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:39:20,863 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:39:20,863 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:39:20,863 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:39:20,864 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:39:20,864 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=412, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:39:20,864 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:40:04,763 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:40:04,764 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:40:04,764 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:40:04,764 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:40:04,764 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:40:04,764 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:40:04,764 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:40:04,765 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:40:04,765 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:40:04,765 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=396, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:40:04,765 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:40:52,970 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:40:52,971 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:40:52,971 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:40:52,971 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:40:52,971 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:40:52,971 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:40:52,971 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:40:52,971 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:40:52,972 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=472, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:40:52,972 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=472, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:40:52,972 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:45:06,935 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:45:06,935 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:45:06,935 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:45:06,935 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:45:06,935 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:45:06,936 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:45:06,936 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:45:06,936 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:45:06,937 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:45:06,937 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=468, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:45:06,937 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:45:30,027 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:45:30,027 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:45:30,027 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:45:30,027 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:45:30,027 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:45:30,028 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:45:30,028 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:45:30,028 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:45:30,029 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:45:30,029 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=432, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:45:30,029 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:46:27,465 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:46:27,465 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:46:27,465 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:46:27,466 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:46:27,466 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:46:27,466 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:46:27,466 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:46:27,466 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:46:27,466 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:46:27,466 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:46:27,466 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:46:27,467 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:46:27,467 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:46:27,467 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:46:27,467 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:46:27,467 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:46:27,467 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:46:27,468 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:46:27,468 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:46:27,468 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:46:27,468 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=416, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:46:27,468 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:46:27,468 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:47:38,044 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:47:38,045 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:47:38,045 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:47:38,045 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:47:38,045 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:47:38,045 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:47:38,046 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:47:38,046 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:47:38,046 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:47:38,046 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=484, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:47:38,047 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:48:14,592 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:48:14,592 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:48:14,592 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:48:14,592 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:48:14,592 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:48:14,593 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:48:14,593 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:48:14,593 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:48:14,594 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=368, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:48:14,594 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=368, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:48:14,594 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:49:51,987 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:49:51,987 :: DEBUG :: tcp_server :: поехали
+2021-06-15 15:49:51,987 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {}
+2021-06-15 15:49:51,987 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
+2021-06-15 15:49:51,987 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:49:51,988 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:49:51,988 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:49:51,988 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:49:51,989 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:49:51,989 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=440, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:49:51,989 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:50:00,953 :: DEBUG :: tcp_server :: установлленно соединение с клиентом: <socket.socket fd=472, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61206)>, адресс: ('127.0.0.1', 61206)
+2021-06-15 15:50:00,953 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=472, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61206)>, 1024):: именованные аргументы: {}
+2021-06-15 15:50:00,954 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-15 15:50:00.947153\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.'
+2021-06-15 15:50:00,954 :: DEBUG :: tcp_server :: получено сообщение: b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-15 15:50:00.947153\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.': от клиента: <socket.socket fd=472, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61206)>, длинной: ('127.0.0.1', 61206) байт
+2021-06-15 15:50:00,954 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95\x80\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x08presence\x94\x8c\x04time\x94\x8c\x1a2021-06-15 15:50:00.947153\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:50:00,954 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'presence', 'time': '2021-06-15 15:50:00.947153', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:50:00,954 :: DEBUG :: tcp_server :: сообщение декодировано: {'action': 'presence', 'time': '2021-06-15 15:50:00.947153', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:50:00,954 :: INFO :: tcp_server :: Сообщение: {'action': 'presence', 'time': '2021-06-15 15:50:00.947153', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, было отправлено клиентом: ('127.0.0.1', 61206)
+2021-06-15 15:50:00,954 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:50:00.947153', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:50:00,954 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:50:00,954 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:50:00,954 :: INFO :: tcp_server :: создано ответное сообщение: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:50:00,955 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=472, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61206)>, b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'):: именованные аргументы: {}
+2021-06-15 15:50:00,955 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:50:00,955 :: INFO :: tcp_server :: ответное сообщение: b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.' отправлено <socket.socket fd=472, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61206)>
+2021-06-15 15:50:00,955 :: DEBUG :: tcp_server :: закрыто соединение с клиентом: <socket.socket [closed] fd=-1, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0>, адресс: ('127.0.0.1', 61206)
+2021-06-15 15:50:00,955 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:50:52,140 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,207 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,207 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,208 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:50:52.140633', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:50:52,208 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:50:52.140633', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:50:52,208 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:50:52,208 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:50:52,208 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:50:52,208 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:50:52,210 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,210 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,210 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,211 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:50:52.140633', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:50:52,211 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:50:52.140633', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:50:52,211 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:50:52.140633', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:50:52,211 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:50:52,211 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:50:52,211 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:50:52,211 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:50:52,211 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:50:52,211 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:50:52,213 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,213 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,213 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,213 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,214 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:50:52,214 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:50:52,214 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:50:52,214 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:50:52,214 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:50:52,214 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:50:52,214 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:50:52,214 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:50:52,216 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61219)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:50:52,216 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61219)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:50:52,216 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61219)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:50:52,216 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61219)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:50:52,216 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:50:52,216 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:50:52,216 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:50:52,216 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:50:52,218 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,218 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,218 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,218 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:50:52,219 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:50:52,221 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61220)>, 1024):: именованные аргументы: {}
+2021-06-15 15:50:52,221 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61220)>, 1024):: именованные аргументы: {}
+2021-06-15 15:50:52,221 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61220)>, 1024):: именованные аргументы: {}
+2021-06-15 15:50:52,221 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=820, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61220)>, 1024):: именованные аргументы: {}
+2021-06-15 15:50:52,222 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:50:52,222 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:50:52,222 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:50:52,222 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:50:52,224 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,224 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,224 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,224 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,224 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,224 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,224 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,224 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=812, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,226 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,226 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,226 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,226 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,226 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,227 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,228 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=824, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:50:52,229 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:50:52,229 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:50:52,229 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:50:52,229 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:50:52,229 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:50:52,229 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:50:52,229 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:50:52,229 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:50:52,229 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:50:52,229 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:53:36,516 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,577 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,577 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,577 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:53:36.516856', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:53:36,577 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:53:36.516856', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:53:36,577 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:53:36,577 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:53:36,578 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:53:36,578 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:53:36,580 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,580 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,580 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,580 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:53:36.516856', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:53:36,580 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:53:36.516856', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:53:36,580 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:53:36.516856', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:53:36,580 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:53:36,580 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:53:36,580 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:53:36,581 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:53:36,581 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:53:36,581 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:53:36,582 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,582 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,582 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,582 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,583 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:53:36,583 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:53:36,583 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:53:36,583 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:53:36,583 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:53:36,583 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:53:36,583 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:53:36,583 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:53:36,585 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61225)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:53:36,585 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61225)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:53:36,585 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61225)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:53:36,585 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=772, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61225)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:53:36,586 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:53:36,586 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:53:36,586 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:53:36,586 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,588 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,589 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:36,589 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:36,589 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:36,589 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:36,591 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=784, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61226)>, 1024):: именованные аргументы: {}
+2021-06-15 15:53:36,591 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=784, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61226)>, 1024):: именованные аргументы: {}
+2021-06-15 15:53:36,591 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=784, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61226)>, 1024):: именованные аргументы: {}
+2021-06-15 15:53:36,591 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=784, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61226)>, 1024):: именованные аргументы: {}
+2021-06-15 15:53:36,592 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:53:36,592 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:53:36,592 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:53:36,592 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:53:36,594 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,594 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,594 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,594 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,594 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=768, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,594 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=768, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,594 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=768, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,594 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=768, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,596 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,596 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,596 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,596 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,596 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:53:36,597 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:53:36,598 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:53:36,599 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:53:36,599 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:53:36,599 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:53:36,599 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:53:36,599 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:53:59,793 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,857 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,857 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,857 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:53:59.794974', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:53:59,857 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 15:53:59.794974', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:53:59,857 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:53:59,857 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': 200, 'alert': 'серверу пофиг!'}
+2021-06-15 15:53:59,858 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:53:59,858 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 15:53:59,860 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,860 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,860 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,860 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:53:59.794974', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:53:59,860 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:53:59.794974', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:53:59,860 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 15:53:59.794974', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}, <Logger tcp_server_log (DEBUG)>):: именованные аргументы: {}
+2021-06-15 15:53:59,861 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:53:59,861 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:53:59,861 :: DEBUG :: tcp_server :: создан ответ от сервера: {'response': None, 'alert': None}
+2021-06-15 15:53:59,861 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:53:59,861 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:53:59,861 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 15:53:59,862 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,862 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,862 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,862 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,863 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:53:59,863 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:53:59,863 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:53:59,863 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 15:53:59,863 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:53:59,863 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:53:59,863 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:53:59,863 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 15:53:59,865 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61231)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:53:59,865 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61231)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:53:59,865 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61231)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:53:59,865 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61231)>, b'abc'):: именованные аргументы: {}
+2021-06-15 15:53:59,866 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:53:59,866 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:53:59,866 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:53:59,866 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 15:53:59,868 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,868 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,868 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,868 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,868 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:59,868 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:59,868 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:59,868 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:59,869 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,869 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,869 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,869 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,869 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:59,869 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:59,869 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:59,869 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 15:53:59,871 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61232)>, 1024):: именованные аргументы: {}
+2021-06-15 15:53:59,871 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61232)>, 1024):: именованные аргументы: {}
+2021-06-15 15:53:59,871 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61232)>, 1024):: именованные аргументы: {}
+2021-06-15 15:53:59,871 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=700, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61232)>, 1024):: именованные аргументы: {}
+2021-06-15 15:53:59,872 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:53:59,872 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:53:59,872 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:53:59,872 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 15:53:59,873 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,873 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,873 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,873 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,874 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=836, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,874 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=836, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,874 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=836, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,874 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=836, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,875 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,875 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,875 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,875 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,875 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,876 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,877 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=480, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 15:53:59,878 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 16:00:04,619 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 16:00:04,684 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 16:00:04.620674', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}},):: именованные аргументы: {}
+2021-06-15 16:00:04,684 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 16:00:04,686 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 16:00:04.620674', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}},):: именованные аргументы: {}
+2021-06-15 16:00:04,686 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 16:00:04,688 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 16:00:04,688 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 16:00:04,690 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=788, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61240)>, b'abc'):: именованные аргументы: {}
+2021-06-15 16:00:04,690 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 16:00:04,698 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 16:00:04,699 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 16:00:04,699 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 16:00:04,699 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 16:00:04,702 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=796, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 61241)>, 1024):: именованные аргументы: {}
+2021-06-15 16:00:04,702 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 16:00:04,704 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 16:00:04,704 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=492, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 16:00:04,706 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 16:00:04,706 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 16:00:04,706 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 16:00:04,706 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 16:00:04,706 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 16:00:04,706 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 16:00:04,706 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 16:00:04,706 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 16:00:04,707 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 16:00:04,707 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 16:00:04,707 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 16:00:04,707 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 16:00:04,707 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 16:00:04,707 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 16:00:04,707 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 16:00:04,707 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 16:00:04,707 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 16:00:04,707 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=800, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 16:00:04,708 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 16:00:04,708 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 16:00:04,708 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 16:00:04,708 :: DEBUG :: tcp_server :: !функция: main:: вернула None
+2021-06-15 16:31:55,858 :: DEBUG :: server_log_config :: Логгер создан
+2021-06-15 16:31:55,925 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'presence', 'time': '2021-06-15 16:31:55.859593', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}},):: именованные аргументы: {}
+2021-06-15 16:31:55,925 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x957\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94K\xc8\x8c\x05alert\x94\x8c\x1a\xd1\x81\xd0\xb5\xd1\x80\xd0\xb2\xd0\xb5\xd1\x80\xd1\x83 \xd0\xbf\xd0\xbe\xd1\x84\xd0\xb8\xd0\xb3!\x94u.'
+2021-06-15 16:31:55,926 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: accepts_response:: позиционные аркументы: ({'action': 'no_presence', 'time': '2021-06-15 16:31:55.859593', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}},):: именованные аргументы: {}
+2021-06-15 16:31:55,927 :: DEBUG :: tcp_server :: !функция: accepts_response:: вернула b'\x80\x04\x95\x1a\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x08response\x94N\x8c\x05alert\x94Nu.'
+2021-06-15 16:31:55,928 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: parse_message:: позиционные аркументы: (b'\x80\x04\x95s\x00\x00\x00\x00\x00\x00\x00}\x94(\x8c\x06action\x94\x8c\x0bno_presence\x94\x8c\x04time\x94\x8c\n07.06.2021\x94\x8c\x04type\x94\x8c\x06status\x94\x8c\x04user\x94}\x94(\x8c\x0caccount_name\x94\x8c\n\xd0\x93\xd0\xbe\xd1\x81\xd1\x82\xd1\x8c\x94h\x06\x8c\x07\xd0\xa2\xd1\x83\xd1\x82!\x94uu.',):: именованные аргументы: {}
+2021-06-15 16:31:55,928 :: DEBUG :: tcp_server :: !функция: parse_message:: вернула {'action': 'no_presence', 'time': '07.06.2021', 'type': 'status', 'user': {'account_name': 'Гость', 'status': 'Тут!'}}
+2021-06-15 16:31:55,930 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: send_response_client:: позиционные аркументы: (<socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52229)>, b'abc'):: именованные аргументы: {}
+2021-06-15 16:31:55,930 :: DEBUG :: tcp_server :: !функция: send_response_client:: вернула None
+2021-06-15 16:31:55,932 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 16:31:55,932 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 16:31:55,932 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('localhost', 7777):: именованные аргументы: {}
+2021-06-15 16:31:55,933 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='localhost', port=7777)
+2021-06-15 16:31:55,935 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: receive_message_from_client:: позиционные аркументы: (<socket.socket fd=736, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 52230)>, 1024):: именованные аргументы: {}
+2021-06-15 16:31:55,935 :: DEBUG :: tcp_server :: !функция: receive_message_from_client:: вернула b'abc'
+2021-06-15 16:31:55,941 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 16:31:55,941 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 16:31:55,944 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: main:: позиционные аркументы: ('0.0.0.0', 7777, <Logger tcp_server_log (DEBUG)>, 1024):: именованные аргументы: {'testing': True}
+2021-06-15 16:31:55,944 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"True"
+2021-06-15 16:31:55,944 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: get_args:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 16:31:55,944 :: DEBUG :: tcp_server :: !функция: get_args:: вернула Namespace(addr='0.0.0.0', port=7777)
+2021-06-15 16:31:55,944 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
+2021-06-15 16:31:55,944 :: DEBUG :: tcp_server :: !произошел вызов ф-ии: set_socket_connection_serv:: позиционные аркументы: ('0.0.0.0', 7777):: именованные аргументы: {}
+2021-06-15 16:31:55,945 :: DEBUG :: tcp_server :: !функция: set_socket_connection_serv:: вернула <socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 16:31:55,945 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=744, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
+2021-06-15 16:31:55,945 :: DEBUG :: tcp_server :: жду клиента
+2021-06-15 16:31:55,945 :: DEBUG :: tcp_server :: !функция: main:: вернула None
