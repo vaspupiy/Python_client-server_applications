@@ -24,14 +24,14 @@ def log(func):
 
 
 @log
-def create_presence(_time: datetime, name="Гость", status="Тут!") -> dict:
+def create_presence(_time: datetime, _name, status="Тут!") -> dict:
     """формирует presence-сообщение"""
     _msg = {
         "action": "presence",
         "time": str(_time),
         "type": "status",
         "user": {
-            "account_name": name,
+            "account_name": _name,
             "status": status
         }
     }
@@ -39,14 +39,23 @@ def create_presence(_time: datetime, name="Гость", status="Тут!") -> dic
 
 
 @log
-def create_msg(_time: datetime, _input_msg: str, name="Гость") -> dict:
+def create_msg(_time: datetime, _to: str, _input_msg: str, _name) -> dict:
     """формирует presence-сообщение"""
     _msg = {
         "action": "msg",
-        "time": _time,
-        "to": "#all",
-        "from": name,
+        "time": str(_time),
+        "to": _to,
+        "from": _name,
         "message": _input_msg
+    }
+    return _msg
+
+
+def join_leave_chat(_time: datetime, _action: str, _room) -> dict:
+    _msg = {
+        "action": _action,
+        "time": str(_time),
+        "room": _room,
     }
     return _msg
 
@@ -83,6 +92,8 @@ def parse_message(_data: dict) -> str:
             return _data["message"]
         elif _data["action"] == 'probe':
             return 'probe'
+    elif "response" in _data:
+        return _data['alert']
 
 
 @log
@@ -105,38 +116,79 @@ def set_socket_connection(_host: str, _port: int):
 
 
 def join_chat():
-    pass
+    user_input = input('К какому чату желаете присоединиться?: \n"Зрящие во все корни" - (z)'
+                       '\n"Хладнокровные чревоугодники" (a) \nДа ну на фиг (все остальное)\n')
+    if user_input == 'z':
+        room = '#Зрящие во все корни'
+    elif user_input == 'a':
+        room = '#Хладнокровные чревоугодники'
+    else:
+        return
+    return room
+
+    # msg = join_leave_chat(_time, 'join', room)
+    # byte_msg = dumps_message(msg)
+    # send_message(_connect, byte_msg)
 
 
 def leave_chat():
-    pass
+    user_input = input('От какого чата желаете отключиться?: \n"Зрящие во все корни" - (z)'
+                       '\n"Хладнокровные чревоугодники" (a) \nДа ну на фиг (все остальное)\n')
+    if user_input == 'z':
+        room = '#Зрящие во все корни'
+    elif user_input == 'a':
+        room = '#Хладнокровные чревоугодники'
+    else:
+        return
+    return room
 
 
-def create_and_send_msg():
-    pass
+def create_param_msg():
+    user_input = input('Куда отправить собщение?:'
+                       '\n в чат "Зрящие во все корни" - (z)'
+                       '\nв чат "Хладнокровные чревоугодники" (a)'
+                       '\nПользователю (u)'
+                       '\nДа ну на фиг (все остальное)\n')
+    if user_input == 'z':
+        _to = '#Зрящие во все корни'
+    elif user_input == 'a':
+        _to = '#Хладнокровные чревоугодники'
+    elif user_input == 'u':
+        _to = input('Введите имя пользователя, кому отправим\n').capitalize()
+    else:
+        return
+    return _to
 
 
 @log
 def write_messages(_time, _sock, _name):
     while True:
-        msg = input('Что будем делать?\n Вступить в чат (j) \n Выйти из чата (l) \nОтправить сообщение(m) '
-                    '\nВыйти и пойти куда глаза глядят (q)')
-        if msg == 'q':
+        _msg = None
+        user_input = input('Что будем делать?\nВступить в чат (j) \nВыйти из чата (l) \nОтправить сообщение(m)'
+                           '\nВыйти и пойти куда глаза глядят (q)\n')
+        if user_input == 'q':
             return
-        elif msg == 'j':
-            join_chat()
-        elif msg == 'l':
-            leave_chat()
-        elif msg == 'm':
-            create_and_send_msg()
-        # send_msg = create_msg(_time, msg, _name)
-        # msg_byte = dumps_message(send_msg)
-        # send_message(_sock, msg_byte)
+        elif user_input == 'j':
+            _room = join_chat()
+            if _room:
+                _msg = join_leave_chat(_time, 'join', _room)
+        elif user_input == 'l':
+            _room = leave_chat()
+            if _room:
+                _msg = join_leave_chat(_time, 'leave', _room)
+        elif user_input == 'm':
+            _to = create_param_msg()
+            user_msg = input('Введите сообщение\n')
+            if user_msg:
+                _msg = create_msg(_time, _to, user_msg, _name)
+        if _msg:
+            msg_byte = dumps_message(_msg)
+            send_message(_sock, msg_byte)
 
 
 @log
-def send_receive_presence(_sock, _time, _len_message) -> dict:
-    msg = create_presence(_time)
+def send_receive_presence(_sock, _time, _len_message, _name) -> dict:
+    msg = create_presence(_time, _name)
     byte_msg = dumps_message(msg)
     send_message(_sock, byte_msg)
     data_bytes = receive_message(_sock, _len_message)
@@ -144,19 +196,19 @@ def send_receive_presence(_sock, _time, _len_message) -> dict:
 
 
 @log
-def read_messages(_sock, _time, _len_message):
+def read_messages(_sock, _time, _len_message, _name):
     while True:
         data_bytes = receive_message(_sock, _len_message)
         encode_msg = encode_message(data_bytes)
         message_from_server = parse_message(encode_msg)
         if message_from_server == 'probe':
-            send_receive_presence(_sock, _time, _len_message)
-        print('Ответ: ', message_from_server)
+            send_receive_presence(_sock, _time, _len_message, _name)
+        print('\nПолучено сообщение: ', message_from_server, '\n')
 
 
 def create_thread(_sock, _time, _len_message, _name):
     # прием сообщений
-    r_thread = Thread(target=read_messages, daemon=True, args=(_sock, _time, _len_message))
+    r_thread = Thread(target=read_messages, daemon=True, args=(_sock, _time, _len_message, _name))
     r_thread.start()
 
     # Отправка сообщений
@@ -168,11 +220,8 @@ def create_thread(_sock, _time, _len_message, _name):
 def main(_host, _port, _time: datetime, _len_message=4096, _name="Гость"):
     sock = socket(AF_INET, SOCK_STREAM)
     sock.connect((_host, _port))
-    encode_msg = send_receive_presence(sock, _time, _len_message)
-    print(encode_msg)
+    encode_msg = send_receive_presence(sock, _time, _len_message, _name)
     if encode_msg['response'] == 200:
-        print(1)
-        print(encode_msg["alert"])
         create_thread(sock, _time, _len_message, _name)
     else:
         print(encode_msg['response'], encode_msg['error'])
@@ -183,11 +232,13 @@ if __name__ == '__main__':
     PORT = 7777
     TIME = datetime.now()
     LEN_RECEIVE_MASSAGE = 1024
+    name = input('введите свое имя: \n').capitalize()
+    print(f'Привет {name}')
 
     logger.debug('поехали')
 
     try:
-        main(HOST, PORT, TIME, LEN_RECEIVE_MASSAGE, )
+        main(HOST, PORT, TIME, LEN_RECEIVE_MASSAGE, name)
     except Exception as error:
         logger.exception(error)
 

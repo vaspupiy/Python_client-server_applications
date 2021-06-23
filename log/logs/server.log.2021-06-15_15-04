@@ -1,6 +1,0 @@
-2021-06-15 15:04:04,372 :: DEBUG :: server_log_config :: Логгер создан
-2021-06-15 15:04:04,373 :: DEBUG :: tcp_server :: поехали
-2021-06-15 15:04:04,373 :: DEBUG :: tcp_server :: параметры ф-ии main: "0.0.0.0"::"7777"::"1024"::"False"
-2021-06-15 15:04:04,373 :: DEBUG :: tcp_server :: получены значения хоста: 0.0.0.0 и порта: 7777
-2021-06-15 15:04:04,374 :: DEBUG :: tcp_server ::  создано соединение: <socket.socket fd=448, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('0.0.0.0', 7777)>
-2021-06-15 15:04:04,374 :: DEBUG :: tcp_server :: жду клиента

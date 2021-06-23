@@ -33,6 +33,12 @@ def accepts_response(_data: dict) -> dict:
         _response["alert"] = "серверу пофиг!"
     elif _data["action"] == "msg":
         return _data
+    elif _data["action"] == "join":
+        _response["response"] = 200
+        _response["alert"] = "Присоединились к чату!"
+    elif _data["action"] == "leave":
+        _response["response"] = 200
+        _response["alert"] = "Откл от чата!"
     return _response
 
 
@@ -95,18 +101,19 @@ def read_requests(r_clients: list, all_clients: list, data_volume: int, names: d
                 names[sock] = msg['user']['account_name']
             elif 'action' in msg:
                 if msg['action'] == 'join' and sock not in chats[msg['room']]:
-                    chats[msg['room']].appen(sock)
+                    chats[msg['room']].append(sock)
                 if msg['action'] == 'leave' and sock in chats[msg['room']]:
                     chats[msg['room']].remove(sock)
 
         except BaseException as e:
+            print(e)
             print(f'Клиент {sock.fileno()} {sock.getpeername()} отключился')
             all_clients.remove(sock)
             names.pop(sock, None)
-            for chat, clients in chats:
+            for chat, clients in chats.items():
                 if sock in clients:
                     clients.remove(sock)
-    print('names', names)
+
     return responses
 
 
@@ -118,21 +125,27 @@ def write_responses(requests: dict, w_clients: list, all_clients: list, names: d
             try:
                 response = accepts_response(requests[sock])
                 b_response = encode_response(response)
-                if "action" in response:
-                    for client in all_clients:
-                        send_response_client(client, b_response)
+                if "action" in response and response["action"] == 'msg':
+                    to = response['to']
+                    if '#' in to:
+                        for client in chats[to]:
+                            send_response_client(client, b_response)
+                    else:
+                        for client, name in names.items():
+                            if name == to:
+                                send_response_client(client, b_response)
                 else:
                     send_response_client(sock, b_response)
             except BaseException as e:
+                print(e)
                 print(f'Клиент {sock.fileno()} {sock.getpeername()} отключился')
                 sock.close()
                 all_clients.remove(sock)
                 names.pop(sock, None)
-                for chat, clients in chats:
+                for chat, clients in chats.items():
                     if sock in clients:
                         clients.remove(sock)
 
-    print(all_clients)
 
 
 @log
@@ -141,7 +154,7 @@ def main(_host, _port, _len_message=4096, testing=False) -> None:
     socket_connection = set_socket_connection_serv(args.addr, args.port)
     clients = []
     names = {}
-    chats = {"Зрящие во все корни": [], "Хладнокровные чревоугодники": []}
+    chats = {"#Зрящие во все корни": [], "#Хладнокровные чревоугодники": []}
 
     while True:
         if testing:
