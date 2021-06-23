@@ -126,10 +126,6 @@ def join_chat():
         return
     return room
 
-    # msg = join_leave_chat(_time, 'join', room)
-    # byte_msg = dumps_message(msg)
-    # send_message(_connect, byte_msg)
-
 
 def leave_chat():
     user_input = input('От какого чата желаете отключиться?: \n"Зрящие во все корни" - (z)'
