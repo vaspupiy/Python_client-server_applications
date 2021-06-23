@@ -111,7 +111,7 @@ def write_responses(requests: dict, w_clients: list, all_clients: list) -> None:
             try:
                 response = accepts_response(requests[sock])
                 b_response = encode_response(response)
-                if response["action"]:
+                if "action" in response:
                     for client in all_clients:
                         send_response_client(client, b_response)
                 else:

@@ -82,8 +82,8 @@ def encode_message(_data: bytes) -> dict:
 @log
 def parse_message(_data: dict) -> str:
     """разбирает сообщение сервера, пока только Пользователь-Чат (согласно заданию)"""
-    if _data["action"]:
-        if _data["action"] == 'msg':  # а есть ли случаи, когда входящий "action" не "msg"?... На всяки проверю...
+    if "action" in _data:
+        if _data["action"] == 'msg':
             return _data["message"]
 
 
